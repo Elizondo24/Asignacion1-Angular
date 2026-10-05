@@ -1,0 +1,40 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Laptop Lenovo",
+      "precio": 750,
+      "categoria": "Tecnología"
+    },
+    {
+      "id": 2,
+      "nombre": "Audífonos Bluetooth",
+      "precio": 45,
+      "categoria": "Audio"
+    },
+    {
+      "id": 3,
+      "nombre": "Teclado Mecánico",
+      "precio": 65,
+      "categoria": "Accesorios"
+    },
+    {
+      "id": 4,
+      "nombre": "Mouse Inalámbrico",
+      "precio": 30,
+      "categoria": "Accesorios"
+    },
+    {
+      "id": 5,
+      "nombre": "Monitor 24 pulgadas",
+      "precio": 180,
+      "categoria": "Tecnología"
+    },
+    {
+      "id": 6,
+      "nombre": "Webcam HD",
+      "precio": 55,
+      "categoria": "Accesorios"
+    }
+  ]
+}

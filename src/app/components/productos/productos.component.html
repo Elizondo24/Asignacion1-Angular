@@ -1,0 +1,61 @@
+<div class="pagina">
+
+  <header class="encabezado">
+    <div>
+      <h1>Catálogo de Productos</h1>
+      <p>Explora nuestros productos disponibles</p>
+    </div>
+
+    <div class="contador">
+      <span>{{ productos.length }}</span>
+      productos
+    </div>
+  </header>
+
+  <div *ngIf="cargando" class="estado">
+    <div class="spinner"></div>
+    <p>Cargando productos...</p>
+  </div>
+
+  <div *ngIf="error" class="error">
+    {{ error }}
+  </div>
+
+  <main class="productos" *ngIf="!cargando && !error">
+
+    <article class="producto" *ngFor="let producto of productos">
+
+      <div class="producto-superior">
+        <span class="id-producto">
+          #{{ producto.id }}
+        </span>
+
+        <span class="categoria">
+          {{ producto.categoria }}
+        </span>
+      </div>
+
+      <div class="icono-producto">
+        🛍️
+      </div>
+
+      <h2>{{ producto.nombre }}</h2>
+
+      <div class="producto-inferior">
+        <div>
+          <span class="etiqueta-precio">Precio</span>
+          <span class="precio">
+            ${{ producto.precio }}
+          </span>
+        </div>
+
+        <button type="button">
+          Ver producto
+        </button>
+      </div>
+
+    </article>
+
+  </main>
+
+</div>
